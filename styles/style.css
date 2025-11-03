@@ -177,7 +177,9 @@ h3 {
 .section-link:focus-visible {
   border: 1px solid var(--main-text-color);
 }
-
+.card__text, .card__title {
+  line-height: 23.4px;
+}
 /* Расстановка между абзацами, заголовками и секциями */
 
 .question-first .card__text:first-of-type {
