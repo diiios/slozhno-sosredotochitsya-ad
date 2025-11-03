@@ -9,6 +9,7 @@
   background-attachment: fixed;
   padding: 0px 10px;
   line-height: 23.4px;
+  margin: 0 auto;
 }
 
 .header {
@@ -284,6 +285,10 @@ h3 {
     margin: 0px;
     min-block-size: 100vh;
   }
+  .rec-decorator {
+    top: 19px;
+    right: 8px;
+  }
 
   .header__title {
     margin-left: -20px;
@@ -371,8 +376,14 @@ h3 {
 }
 
 @media (width >= 1024px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-top: 0px;
+  }
+
   .header__post-title {
     max-inline-size: 491px;
+    margin-top: -22px;
   }
 
   .header__theme-menu {
@@ -386,6 +397,7 @@ h3 {
     margin-right: 0px;
     inline-size: auto;
     block-size: auto;
+    margin-top: 19px;
   }
 
   .question-first {
@@ -408,5 +420,10 @@ h3 {
   .question-third {
     display: grid;
     grid-template-columns: 32.035% auto;
+  }
+
+  .title-footer {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    text-shadow: 2px 2px 0 var(--main-shadow-color, #ff0070);
   }
 }
