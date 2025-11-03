@@ -304,6 +304,7 @@ h3 {
   .main {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 60px;
   }
 
   .footer {
@@ -314,10 +315,6 @@ h3 {
     margin: 20px 10px;
     margin-bottom: 0px;
     min-block-size: 100vh;
-  }
-
-  .main {
-    margin-top: 60px;
   }
 
   .section-main:not(:last-child) {
@@ -386,10 +383,6 @@ h3 {
 }
 
 @media (width >= 1024px) {
-  .page {
-    padding-bottom: 0px;
-  }
-
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 0px;
