@@ -8,6 +8,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding: 0px 10px;
+  line-height: 23.4px;
 }
 
 .header {
@@ -276,6 +277,7 @@ h3 {
   .header__post-title {
     justify-self: end;
     max-inline-size: 364px;
+        margin-top: -20px;
   }
 
   .header {
@@ -285,6 +287,10 @@ h3 {
 
   .header__title {
     margin-left: -20px;
+  }
+
+  .header__theme-menu-list {
+    margin-top: 17px;
   }
 
   .footer {
@@ -298,7 +304,7 @@ h3 {
   }
 
   .main {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .section-main:not(:last-child) {
@@ -306,7 +312,7 @@ h3 {
   }
 
   .section-main:last-child {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .question-first {
@@ -352,6 +358,15 @@ h3 {
   .gallery img:nth-child(5) {
     grid-column: 2 / 4;
     grid-row: 3;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 0px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
   }
 }
 
