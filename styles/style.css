@@ -14,14 +14,15 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  margin: 10px 0px;
-  min-block-size: calc(100vh - 20px);
+  margin:0px;
+  min-block-size: 100vh;
+  min-height: 668px;
 }
 
 .rec-decorator {
   position: absolute;
-  top: 0px;
-  right: 10px;
+  top: 10px;
+  right:9px;
   color: var(--nav-color, #ff0070);
   font-size: var(--main-font-size, 18px);
   line-height: 25px;
@@ -32,20 +33,20 @@
 .rec-decorator::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   right: 0px;
   display: block;
   border-radius: 50%;
   box-shadow: 0px 0px 4px #ff0070, 0px 0px 4px #ff0070, 0px 0px 4px #ff0070;
   background-color: var(--main-background-text-color, #ff0070);
-  block-size: 9px;
-  inline-size: 9px;
+  block-size: 10px;
+  inline-size: 10px;
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
   border-top: 1px solid var(--main-border-color, #ff0070);
   border-right: 1px solid var(--main-border-color, #ff0070);
@@ -57,7 +58,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 0px;
   border-bottom: 1px solid var(--main-border-color, #ff0070);
   border-left: 1px solid var(--main-border-color, #ff0070);
@@ -69,11 +70,12 @@
 .header__title {
   color: var(--main-title-color, #db00ff);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: Bold;
   line-height: 83%;
   letter-spacing: 0%;
   text-shadow: 4px 4px 0 var(--main-shadow-color, #ff0070);
+  margin-top: 2px;
 }
 
 .header__post-title {
@@ -85,6 +87,7 @@
   font-style: Bold;
   line-height: 23.4px;
   letter-spacing: 0%;
+  margin-top: -10px;
   background-color: var(--main-background-text-color, #ff0070);
   max-inline-size: 355px;
 }
@@ -100,7 +103,8 @@
   justify-content: center;
   gap: 10px;
   align-self: center;
-  margin-right: 5px;
+  margin-top: 10px;
+  /* margin-right: 5px; */
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   text-align: center;
@@ -112,7 +116,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 0px;
-  padding-top: 2px;
+  padding-top: 2px; 
   padding-bottom: 4px;
   outline: none;
   color: var(--nav-color, #ff0070);
