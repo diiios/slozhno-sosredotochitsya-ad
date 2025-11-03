@@ -1,9 +1,9 @@
 .page {
   font-family: var(--main-font-face, IBM Plex Mono), Courier, monospace;
-  padding: 0px 10px;
   line-height: 23.4px;
   margin: 0 auto;
   background-color: var(--main-background-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -11,9 +11,10 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin: 0px;
+  padding: 10px;
   block-size: 100vh;
   min-height: 668px;
-    background-image: var(
+  background-image: var(
     --background-image,
     url("../images/cover-image-dark.png")
   );
@@ -24,20 +25,21 @@
 
 .rec-decorator {
   position: absolute;
-  top: 10px;
-  right: 9px;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
   color: var(--nav-color, #ff0070);
   font-size: var(--main-font-size, 18px);
   line-height: 25px;
   text-transform: uppercase;
-  inline-size: 52px;
+  inline-size: 60px;
 }
 
 .rec-decorator::after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 0px;
+  top: 8px;
+  right: 8px;
   display: block;
   border-radius: 50%;
   box-shadow: 0px 0px 4px #ff0070, 0px 0px 4px #ff0070, 0px 0px 4px #ff0070;
@@ -49,8 +51,9 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 0px;
+  margin: 10px;
   border-top: 1px solid var(--main-border-color, #ff0070);
   border-right: 1px solid var(--main-border-color, #ff0070);
   background-color: transparent;
@@ -61,7 +64,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
+  margin: 10px;
   left: 0px;
   border-bottom: 1px solid var(--main-border-color, #ff0070);
   border-left: 1px solid var(--main-border-color, #ff0070);
@@ -90,7 +94,6 @@
   font-style: Bold;
   line-height: 23.4px;
   letter-spacing: 0%;
-  margin-top: -10px;
   background-color: var(--main-background-text-color, #ff0070);
   max-inline-size: 355px;
 }
@@ -106,7 +109,7 @@
   justify-content: center;
   gap: 10px;
   align-self: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   /* margin-right: 5px; */
   font-size: var(--main-font-size, 18px);
   font-style: normal;
@@ -144,7 +147,7 @@
 }
 
 .main {
-  margin-top: 40px;
+  margin: 40px 10px 0px 10px;
 }
 
 .section-main {
@@ -180,7 +183,9 @@ h3 {
 .section-link:focus-visible {
   border: 1px solid var(--main-text-color);
 }
-.card__text, .card__title {
+
+.card__text,
+.card__title {
   line-height: 23.4px;
 }
 /* Расстановка между абзацами, заголовками и секциями */
@@ -271,24 +276,21 @@ h3 {
 }
 
 @media (width >= 768px) {
-  .page {
-    padding: 20px;
-    padding-top: 0px;
-  }
-
   .header__post-title {
     justify-self: end;
     max-inline-size: 364px;
-        margin-top: -20px;
+    margin-top: -10px;
   }
 
   .header {
-    margin: 0px;
+    margin: 0px 10px;
     min-block-size: 100vh;
   }
+
   .rec-decorator {
-    top: 19px;
-    right: 8px;
+    top: 0px;
+    right: 0px;
+    margin: 20px 10px;
   }
 
   .header__title {
@@ -296,7 +298,12 @@ h3 {
   }
 
   .header__theme-menu-list {
-    margin-top: 17px;
+    margin-top: 10px;
+  }
+
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .footer {
@@ -304,7 +311,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin: 20px 0px;
+    margin: 20px 10px;
     margin-bottom: 0px;
     min-block-size: 100vh;
   }
@@ -367,12 +374,14 @@ h3 {
   }
 
   .decorated-zone::before {
-    top: 20px;
+    top: 0px;
     right: 0px;
+    margin: 20px 10px;
   }
 
   .decorated-zone::after {
-    bottom: 20px;
+    bottom: 0px;
+    margin: 20px 10px;
   }
 }
 
@@ -380,7 +389,7 @@ h3 {
   .page {
     padding-bottom: 0px;
   }
-  
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 0px;
@@ -388,7 +397,7 @@ h3 {
 
   .header__post-title {
     max-inline-size: 491px;
-    margin-top: -22px;
+    margin-top: -12px;
   }
 
   .header__theme-menu {
@@ -402,7 +411,6 @@ h3 {
     margin-right: 0px;
     inline-size: auto;
     block-size: auto;
-    margin-top: 19px;
   }
 
   .question-first {
