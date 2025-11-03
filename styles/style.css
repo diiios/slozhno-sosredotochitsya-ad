@@ -377,6 +377,10 @@ h3 {
 }
 
 @media (width >= 1024px) {
+  .page {
+    padding-bottom: 0px;
+  }
+  
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 0px;
