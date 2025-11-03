@@ -1,4 +1,5 @@
 :root.theme-dark {
+  --main-background-color: #000028;
   --background-image: url("../images/cover-image-dark.png");
   --main-title-color: #db00ff;
   --titles-color-without-back: #FF0070;

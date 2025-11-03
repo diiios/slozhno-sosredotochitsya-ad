@@ -1,4 +1,5 @@
 :root.theme-light {
+  --main-background-color: #FFF1F7;
   --background-image: url("../images/cover-image-light.png");
   --main-title-color: #ffc2e6;
   --titles-color-without-back: #353430;

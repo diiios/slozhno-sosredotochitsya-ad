@@ -1,15 +1,9 @@
 .page {
   font-family: var(--main-font-face, IBM Plex Mono), Courier, monospace;
-  background-image: var(
-    --background-image,
-    url("../images/cover-image-dark.png")
-  );
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 0px 10px;
   line-height: 23.4px;
   margin: 0 auto;
+  background-color: var(--main-background-color);
 }
 
 .header {
@@ -19,6 +13,13 @@
   margin: 0px;
   block-size: 100vh;
   min-height: 668px;
+    background-image: var(
+    --background-image,
+    url("../images/cover-image-dark.png")
+  );
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .rec-decorator {
